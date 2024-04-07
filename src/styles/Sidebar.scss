@@ -1,0 +1,45 @@
+// src/styles/Sidebar.scss
+.sidebar {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: -300px; // Initially hide the sidebar off-screen
+  width: 300px;
+  background-color: #333;
+  color: white;
+  transition: left 0.3s ease; // Apply smooth transition
+  z-index: 10; // Ensure sidebar is above other content
+}
+
+.sidebar-toggle {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+  z-index: 20; // Ensure button is above sidebar and other content
+}
+
+.sidebar--open {
+  left: 0; // Move sidebar into view when open
+}
+
+nav {
+  margin-top: 50px;
+  padding: 0 20px;
+}
+
+nav a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  padding: 10px 0;
+  transition: color 0.3s ease; // Apply smooth transition
+}
+
+nav a:hover {
+  color: #ff7f50; // Change color on hover
+}

@@ -1,0 +1,93 @@
+.projects-container {
+  padding: 4rem;
+  background-image: linear-gradient(to bottom right, #000428, #004e92);
+
+  @media (min-width: 768px) {
+    padding: 8rem;
+  }
+}
+.project-image {
+  width: 100%; /* Make the image fit the card width */
+  height: 150px; /* Set a fixed height or use an aspect ratio */
+  object-fit: cover; /* Crop the image to fit within the dimensions */
+  border-radius: 10px; /* Match the card's border radius */
+  margin-bottom: 1rem; /* Add some space below the image */
+}
+.section-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #b5c0d0; /* Dark gray heading */
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.project-card {
+  background-image: linear-gradient(to bottom right, #4568dc, #2c3e50);
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+
+  &:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  }
+}
+
+.project-title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #b5c0d0; /* Bright blue title */
+  margin-bottom: 1rem;
+}
+
+.project-description {
+  color: #f1eded; /* Light gray description text */
+  margin-bottom: 1.5rem;
+}
+
+.project-technologies {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.project-technologies li {
+  display: inline-block;
+  margin-right: 1rem;
+  margin: 0.2rem;
+  font-size: 0.8rem;
+  color: #999; /* Light gray tech stack text */
+  background-color: #eee; /* Light gray tech stack background */
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+}
+
+.project-link {
+  display: inline-block;
+  margin-top: 1rem;
+  font-size: 1rem;
+  color: #ffffff;
+  text-decoration: none;
+
+  &:hover {
+    color: #c0b9b9; /* Darker red on hover */ /* Added */
+  }
+}
+
+/* Added styles for a modern touch */
+.project-card {
+  border: 2px solid transparent; /* Add a subtle border on hover */
+  transition: border-color 0.2s ease-in-out;
+}
+
+.project-card:hover {
+  border-color: #2196f3; /* Change border color to match title color on hover */
+}

@@ -1,0 +1,98 @@
+/* Base styles */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  background-color: transparent; /* Light background color */
+}
+
+/* Contact Section */
+
+.contact-section {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Particle Background (Optional) */
+/* Comment out if not using particles.jsx */
+
+.contact-section {
+  opacity: 0.9; /* Adjust opacity to see particles better */
+}
+
+/* Contact Container */
+
+.contact-container {
+  /* Optional: Adjust container width if needed */
+  /* Example: width: 800px; */
+  display: flex;
+  justify-content: center; /* Center form within container */
+}
+
+/* Contact Card */
+
+.contact-card {
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  padding: 2rem;
+  display: flex;
+  position: relative;
+  transform: translateY(-50px); /* Lift the card visually */
+}
+
+.contact-image {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  margin-right: 2rem;
+}
+
+/* Contact Form */
+
+.contact-form {
+  flex: 1; /* Allow form to fill remaining space */
+}
+
+.contact-form h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 0.7rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+  box-sizing: border-box; /* Include padding in width calculation */
+}
+
+.contact-form textarea {
+  height: 100px; /* Adjust textarea height as needed */
+}
+
+.contact-form button {
+  background-color: #4caf50; /* Green button color */
+  color: white;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.contact-form button:hover {
+  background-color: #3e8e41; /* Green hover color */
+}

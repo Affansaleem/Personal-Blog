@@ -1,0 +1,79 @@
+.about-section {
+  background-color: #222; /* Dark background */
+  color: #fff; /* Light text color */
+  padding: 5rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Set minimum viewport height */
+}
+
+.about-card {
+  background-color: #333; /* Slightly darker card background */
+  border-radius: 10px;
+  padding: 2rem;
+  display: flex;
+  max-width: 800px; /* Adjust as needed */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  position: relative; /* Enable relative positioning for the card */
+}
+// .overlapping-name {
+//   position: absolute; /* Make name absolute within the card */
+//   transform: translateY(-50%); /* Adjust vertical positioning as needed */
+//   color: #fefded; /* Text color to stand out on the image */
+//   font-size: 2rem; /* Adjust font size for desired effect */
+//   font-weight: bolder;
+//   text-overflow: ellipsis; /* Clip overflowing text with ellipsis (...) */
+//   white-space: nowrap; /* Prevent wrapping to single line */
+//   /* Optional: Text shadow for readability */
+//   /* text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); */
+
+//   /* Choose one of the following font families: */
+//   font-family: "Open Sans", sans-serif; /* Popular open-source font */
+//   // font-family: "Montserrat", sans-serif; /* Modern, stylish font */
+//   // font-family: "Playfair Display", serif; /* Elegant, serif font */
+//   // font-family: "Lobster", cursive; /* Fun, cursive font */
+// }
+
+.skill-capsule {
+  display: inline-block; /* Allow capsules to sit side-by-side */
+  padding: 0.5rem 1rem; /* Adjust padding as needed */
+  margin: 0.5rem 0.3rem; /* Add some margin for spacing */
+  border-radius: 2rem; /* Create capsule shape */
+  background-color: #31363f; /* Light background color */
+  color: #ffffff; /* Text color */
+}
+.bold {
+  font-weight: 600;
+}
+.profile-aboutimage {
+  width: 200px; /* Maintain width for a balanced look */
+  height: 300px; /* Set height to full card height */
+  object-fit: cover; /* Ensure image fills container proportionally */
+  margin-right: 2rem;
+}
+
+.info-container {
+  flex: 1; /* Allow info to fill remaining space */
+}
+
+h2,
+.job-title {
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+}
+
+.list {
+  list-style: none;
+  margin: 1rem 0;
+  padding: 0;
+}
+
+.list h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.list li {
+  margin-bottom: 0.3rem;
+}

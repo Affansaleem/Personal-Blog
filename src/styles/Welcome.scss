@@ -1,0 +1,46 @@
+.welcome-container {
+  background-image: linear-gradient(to bottom right, #004e92, #000428);
+  min-height: 100vh; /* Set minimum height for full viewport */
+  display: flex; /* Allow vertical alignment */
+  flex-direction: column; /* Stack elements vertically */
+  justify-content: center; /* Center elements vertically */
+  align-items: center; /* Center elements horizontally */
+  text-align: center; /* Center text content */
+}
+
+.profile-image {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%; /* Circular image */
+  object-fit: cover; /* Maintain aspect ratio and crop if necessary */
+  margin-bottom: 2rem; /* Add some margin below the image */
+}
+
+h1 {
+  color: #b5c0d0;
+  font-weight: bold; /* Make name bold */
+  margin-bottom: 1rem; /* Add margin below name */
+}
+
+.bio {
+  color: #496989;
+  font-size: 16px; /* Adjust bio font size */
+  line-height: 1.5; /* Improve spacing between lines */
+  margin-bottom: 2rem; /* Add margin below bio */
+  max-width: 700px; /* Limit bio text width */ /* Adjust as needed */
+  margin: 0 auto; /* Center bio text horizontally */
+  margin-bottom: 20px;
+}
+
+.get-started-btn:hover {
+  background-color: #444; /* Button hover color */
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

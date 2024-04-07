@@ -1,0 +1,72 @@
+// App.scss
+.app-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.container {
+  flex: 1;
+  background-image: linear-gradient(to bottom right, #004e92, #000428);
+  padding: 20px;
+}
+
+.article-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  list-style-type: none;
+}
+
+.article-card {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle box-shadow */
+  transition: all 0.2s ease-in-out; /* Smooth hover effects */
+}
+
+.article-card:hover {
+  /* Enhance hover effect */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  transform: translateY(-2px); /* Slight lift on hover */
+}
+
+.article-image {
+  width: 100%; /* Ensure image fills card width */
+  border-radius: 5px; /* Rounded image corners */
+  margin-bottom: 1rem; /* Add some space below image */
+}
+
+h2.article-title {
+  font-size: 1.2rem; /* Adjust font size as needed */
+  margin-bottom: 0.5rem; /* Reduce margin below title */
+}
+
+.article-excerpt {
+  font-size: 0.9rem; /* Adjust excerpt font size */
+  line-height: 1.5; /* Improve spacing between lines */
+  margin-bottom: 1rem; /* Add space below excerpt */
+  color: #333; /* Adjust excerpt text color */
+}
+
+.article-link {
+  color: #007bff; /* Blue link color */
+  text-decoration: none; /* Remove underline initially */
+  font-weight: bold; /* Make link stand out */
+}
+
+.article-link:hover {
+  /* Enhance link hover effect */
+  text-decoration: underline; /* Add underline on hover */
+}
+
+.article-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.article-content {
+  margin-top: 10px;
+  font-size: 1rem;
+}
